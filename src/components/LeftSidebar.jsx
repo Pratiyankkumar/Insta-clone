@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+const frontEndURL = import.meta.env.VITE_FRONTEND_URL;
 import {
   Search,
   Home,
@@ -38,7 +39,7 @@ function LeftSidebar({
     setiIsAuthenticated(false);
 
     // Force navigation to login page
-    window.location.href = "https://insta-clone-one-swart.vercel.app/login";
+    window.location.href = `${frontEndURL}/login`;
   };
 
   if (!authUser) {

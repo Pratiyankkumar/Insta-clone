@@ -3,7 +3,7 @@ import Post from "./Post";
 import Stories from "./Stories";
 import RightSidebar from "./RightSidebar";
 import { ModernLoader } from "./ModernLoader";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import io from "socket.io-client";
 import { useComment } from "@/Contexts/CommentContext";
 
@@ -119,4 +119,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default memo(Feed);

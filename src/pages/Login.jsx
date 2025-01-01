@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Error from "../components/Error";
 import { useAuth } from "../Contexts/AuthContext";
 const backendURL = import.meta.env.VITE_BACKEND_URL;
+const frontEndURL = import.meta.env.VITE_FRONTEND_URL;
 
 function Login() {
   const { setiIsAuthenticated } = useAuth();
@@ -56,7 +57,7 @@ function Login() {
         localStorage.setItem("isAuthenticated", JSON.stringify(true));
         setiIsAuthenticated(true);
 
-        window.location.href = "https://insta-clone-one-swart.vercel.app";
+        window.location.href = frontEndURL;
       }
     } catch (err) {
       console.log(err);
