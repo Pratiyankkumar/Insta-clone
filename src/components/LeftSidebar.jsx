@@ -38,7 +38,7 @@ function LeftSidebar({
     setiIsAuthenticated(false);
 
     // Force navigation to login page
-    window.location.href = "http://localhost:5173/login";
+    window.location.href = "https://insta-clone-one-swart.vercel.app/login";
   };
 
   if (!authUser) {

@@ -56,7 +56,7 @@ function Login() {
         localStorage.setItem("isAuthenticated", JSON.stringify(true));
         setiIsAuthenticated(true);
 
-        window.location.href = "http://localhost:5173";
+        window.location.href = "https://insta-clone-one-swart.vercel.app";
       }
     } catch (err) {
       console.log(err);
